@@ -1,0 +1,34 @@
+# Video Contextual Navigation (VCN) Production Requirements
+# Python dependencies for the production video analysis pipeline
+
+# Core video processing
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+
+# HTTP client for Ollama API communication
+requests==2.31.0
+
+# Base64 encoding/decoding (built-in, but explicit for clarity)
+# base64 - built-in module
+
+# JSON handling (built-in, but explicit for clarity)  
+# json - built-in module
+
+# System monitoring and process management
+psutil==5.9.6
+
+# Image processing and optimization
+Pillow==10.1.0
+
+# Command line interface (if using Click)
+click==8.1.7
+
+# Optional: Progress bars and enhanced terminal output
+tqdm==4.66.1
+
+# Optional: Colorful terminal output
+colorama==0.4.6
+
+# Development and testing dependencies (optional)
+pytest==7.4.3
+pytest-cov==4.1.0 

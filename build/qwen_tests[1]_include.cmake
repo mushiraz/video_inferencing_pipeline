@@ -1,0 +1,5 @@
+if(EXISTS "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests[1]_tests.cmake")
+  include("/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests[1]_tests.cmake")
+else()
+  add_test(qwen_tests_NOT_BUILT qwen_tests_NOT_BUILT)
+endif()

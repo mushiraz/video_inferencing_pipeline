@@ -1,0 +1,231 @@
+# GPU-Accelerated Video Analysis Makefile
+# Supports ROCm/HIP compilation for AMD GPUs
+
+CXX = g++
+HIPCC = hipcc
+CXXFLAGS = -std=c++17 -Wall -O2
+HIPFLAGS = -std=c++17 -O2
+
+# ROCm/HIP paths (adjust based on installation)
+ROCM_PATH = /opt/rocm
+HIP_PATH = $(ROCM_PATH)
+ROCDECODE_PATH = $(ROCM_PATH)
+ROCJPEG_PATH = $(ROCM_PATH)
+
+# Include paths
+INCLUDES = -I$(HIP_PATH)/include \
+           -I$(ROCDECODE_PATH)/include \
+           -I$(ROCJPEG_PATH)/include
+
+# Library paths and links
+LIBS = -L$(ROCM_PATH)/lib \
+       -lhip \
+       -lrocdecode \
+       -lrocjpeg \
+       -lpthread
+
+# Source files
+SOURCES = gpu_cpp_integration.cpp
+TARGET = gpu_video_analyzer
+
+# Build targets
+.PHONY: all clean install test gpu cpu help
+
+# Default target - build with GPU support if available
+all: check_rocm $(TARGET)
+
+# Check if ROCm is installed
+check_rocm:
+	@echo "🔍 Checking ROCm installation..."
+	@if command -v rocm-smi >/dev/null 2>&1; then \
+		echo "✅ ROCm found, building with GPU support"; \
+		$(MAKE) gpu; \
+	else \
+		echo "⚠️  ROCm not found, building CPU-only version"; \
+		$(MAKE) cpu; \
+	fi
+
+# GPU-accelerated build
+gpu: CXXFLAGS += -DUSE_ROCM_DIRECT -DUSE_HIP
+gpu: CXX = $(HIPCC)
+gpu: CXXFLAGS += $(INCLUDES)
+gpu: LDFLAGS += $(LIBS)
+gpu: $(TARGET)
+
+# CPU-only build (fallback)
+cpu: CXXFLAGS += -DCPU_ONLY
+cpu: $(TARGET)
+
+# Build with nlohmann/json support (if available)
+json: CXXFLAGS += -DUSE_NLOHMANN_JSON
+json: $(TARGET)
+
+# Build target
+$(TARGET): $(SOURCES)
+	@echo "🔨 Building GPU-accelerated video analyzer..."
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SOURCES) $(LDFLAGS)
+	@echo "✅ Build complete: $(TARGET)"
+
+# Install dependencies (Ubuntu/Debian)
+install-deps-ubuntu:
+	@echo "📦 Installing dependencies for Ubuntu/Debian..."
+	sudo apt update
+	sudo apt install -y \
+		build-essential \
+		cmake \
+		pkg-config \
+		rocm-dev \
+		rocm-utils \
+		hip-dev \
+		rocdecode-dev \
+		rocjpeg-dev \
+		nlohmann-json3-dev
+	@echo "✅ Dependencies installed"
+
+# Install dependencies (RHEL/CentOS)
+install-deps-rhel:
+	@echo "📦 Installing dependencies for RHEL/CentOS..."
+	sudo dnf groupinstall -y "Development Tools"
+	sudo dnf install -y \
+		cmake \
+		pkgconfig \
+		rocm-dev \
+		rocm-smi \
+		hip-devel \
+		rocdecode-devel \
+		rocjpeg-devel \
+		json-devel
+	@echo "✅ Dependencies installed"
+
+# Test build and functionality
+test: $(TARGET)
+	@echo "🧪 Testing GPU video analyzer..."
+	@if [ -f "test_video.mp4" ]; then \
+		echo "Testing with test_video.mp4..."; \
+		./$(TARGET) test_video.mp4 3; \
+	else \
+		echo "⚠️  test_video.mp4 not found - create test video or provide path"; \
+		echo "Usage: ./$(TARGET) your_video.mp4 [max_frames]"; \
+	fi
+
+# Performance test with multiple videos
+test-batch: $(TARGET)
+	@echo "🎮 Performance testing with batch processing..."
+	@if ls *.mp4 >/dev/null 2>&1; then \
+		./$(TARGET) --batch *.mp4 5; \
+	else \
+		echo "⚠️  No MP4 files found for batch testing"; \
+	fi
+
+# Debug build
+debug: CXXFLAGS += -g -DDEBUG -O0
+debug: $(TARGET)
+
+# Release build with optimizations
+release: CXXFLAGS += -O3 -DNDEBUG -march=native
+release: $(TARGET)
+
+# Build with static linking (for deployment)
+static: LDFLAGS += -static-libgcc -static-libstdc++
+static: $(TARGET)
+
+# Install to system
+install: $(TARGET)
+	@echo "📦 Installing to /usr/local/bin..."
+	sudo cp $(TARGET) /usr/local/bin/
+	sudo chmod +x /usr/local/bin/$(TARGET)
+	@echo "✅ Installed: /usr/local/bin/$(TARGET)"
+
+# Uninstall from system
+uninstall:
+	@echo "🗑️  Removing from /usr/local/bin..."
+	sudo rm -f /usr/local/bin/$(TARGET)
+	@echo "✅ Uninstalled"
+
+# Clean build artifacts
+clean:
+	@echo "🧹 Cleaning build artifacts..."
+	rm -f $(TARGET)
+	rm -f *.o
+	rm -f *.so
+	rm -f core.*
+	@echo "✅ Clean complete"
+
+# Show GPU information
+gpu-info:
+	@echo "🎮 GPU Information:"
+	@echo "=================="
+	@if command -v rocm-smi >/dev/null 2>&1; then \
+		rocm-smi; \
+	else \
+		echo "❌ rocm-smi not found - ROCm not installed"; \
+	fi
+
+# Show build configuration
+config:
+	@echo "🔧 Build Configuration:"
+	@echo "======================"
+	@echo "CXX: $(CXX)"
+	@echo "CXXFLAGS: $(CXXFLAGS)"
+	@echo "INCLUDES: $(INCLUDES)"
+	@echo "LIBS: $(LIBS)"
+	@echo "ROCM_PATH: $(ROCM_PATH)"
+	@echo ""
+	@echo "ROCm Status:"
+	@if command -v rocm-smi >/dev/null 2>&1; then \
+		echo "✅ ROCm available"; \
+	else \
+		echo "❌ ROCm not found"; \
+	fi
+
+# Benchmark different configurations
+benchmark: clean
+	@echo "🏃 Running build benchmarks..."
+	@echo "CPU-only build:"
+	@time $(MAKE) cpu
+	@mv $(TARGET) $(TARGET)_cpu
+	@echo ""
+	@echo "GPU build:"
+	@time $(MAKE) gpu
+	@mv $(TARGET) $(TARGET)_gpu
+	@echo ""
+	@echo "Builds completed - test with:"
+	@echo "./$(TARGET)_cpu your_video.mp4"
+	@echo "./$(TARGET)_gpu your_video.mp4"
+
+# Help target
+help:
+	@echo "🎮 GPU-Accelerated Video Analysis Build System"
+	@echo "=============================================="
+	@echo ""
+	@echo "Targets:"
+	@echo "  all              - Auto-detect and build (GPU if available, CPU fallback)"
+	@echo "  gpu              - Build with GPU acceleration (requires ROCm)"
+	@echo "  cpu              - Build CPU-only version"
+	@echo "  json             - Build with nlohmann/json support"
+	@echo "  debug            - Build debug version"
+	@echo "  release          - Build optimized release version"
+	@echo "  static           - Build with static linking"
+	@echo ""
+	@echo "Installation:"
+	@echo "  install-deps-ubuntu - Install dependencies on Ubuntu/Debian"
+	@echo "  install-deps-rhel   - Install dependencies on RHEL/CentOS"
+	@echo "  install             - Install to /usr/local/bin"
+	@echo "  uninstall           - Remove from system"
+	@echo ""
+	@echo "Testing:"
+	@echo "  test             - Test basic functionality"
+	@echo "  test-batch       - Test batch processing"
+	@echo "  benchmark        - Build and time different configurations"
+	@echo ""
+	@echo "Utilities:"
+	@echo "  gpu-info         - Show GPU information"
+	@echo "  config           - Show build configuration"
+	@echo "  clean            - Clean build artifacts"
+	@echo "  help             - Show this help"
+	@echo ""
+	@echo "Usage Examples:"
+	@echo "  make                    # Auto-build"
+	@echo "  make gpu                # Force GPU build"
+	@echo "  make install-deps-ubuntu && make gpu"
+	@echo "  make test               # Test functionality" 

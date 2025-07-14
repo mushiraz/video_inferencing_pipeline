@@ -1,0 +1,2239 @@
+Start testing: Jul 14 01:29 EDT
+----------------------------------------------------------
+1/51 Testing: FrameExtractionTest.BasicExtraction
+1/51 Test: FrameExtractionTest.BasicExtraction
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.BasicExtraction" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.BasicExtraction" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.BasicExtraction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.BasicExtraction
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+[       OK ] FrameExtractionTest.BasicExtraction (145 ms)
+[----------] 1 test from FrameExtractionTest (145 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (145 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.79 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.BasicExtraction" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.BasicExtraction" time elapsed: 00:00:01
+----------------------------------------------------------
+
+2/51 Testing: FrameExtractionTest.UniformSampling
+2/51 Test: FrameExtractionTest.UniformSampling
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.UniformSampling" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.UniformSampling" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.UniformSampling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.UniformSampling
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+[       OK ] FrameExtractionTest.UniformSampling (142 ms)
+[----------] 1 test from FrameExtractionTest (142 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (142 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.77 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.UniformSampling" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.UniformSampling" time elapsed: 00:00:01
+----------------------------------------------------------
+
+3/51 Testing: FrameExtractionTest.KeyframeSampling
+3/51 Test: FrameExtractionTest.KeyframeSampling
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.KeyframeSampling" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.KeyframeSampling" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.KeyframeSampling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.KeyframeSampling
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Extracting frames from test_video.mp4 (total frames: 50, strategy: keyframe)
+[       OK ] FrameExtractionTest.KeyframeSampling (319 ms)
+[----------] 1 test from FrameExtractionTest (319 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (319 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.94 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.KeyframeSampling" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.KeyframeSampling" time elapsed: 00:00:01
+----------------------------------------------------------
+
+4/51 Testing: FrameExtractionTest.DifferentFrameCounts
+4/51 Test: FrameExtractionTest.DifferentFrameCounts
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.DifferentFrameCounts" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.DifferentFrameCounts" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.DifferentFrameCounts
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.DifferentFrameCounts
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+[       OK ] FrameExtractionTest.DifferentFrameCounts (473 ms)
+[----------] 1 test from FrameExtractionTest (473 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (473 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   2.21 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.DifferentFrameCounts" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.DifferentFrameCounts" time elapsed: 00:00:02
+----------------------------------------------------------
+
+5/51 Testing: FrameExtractionTest.DifferentTargetSizes
+5/51 Test: FrameExtractionTest.DifferentTargetSizes
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.DifferentTargetSizes" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.DifferentTargetSizes" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.DifferentTargetSizes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.DifferentTargetSizes
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+[       OK ] FrameExtractionTest.DifferentTargetSizes (306 ms)
+[----------] 1 test from FrameExtractionTest (306 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (306 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.95 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.DifferentTargetSizes" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.DifferentTargetSizes" time elapsed: 00:00:01
+----------------------------------------------------------
+
+6/51 Testing: FrameExtractionTest.InvalidVideoPath
+6/51 Test: FrameExtractionTest.InvalidVideoPath
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.InvalidVideoPath" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.InvalidVideoPath" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.InvalidVideoPath
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.InvalidVideoPath
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: Couldn't read video stream from file "nonexistent_video.mp4"
+[       OK ] FrameExtractionTest.InvalidVideoPath (103 ms)
+[----------] 1 test from FrameExtractionTest (103 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (103 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.75 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.InvalidVideoPath" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.InvalidVideoPath" time elapsed: 00:00:01
+----------------------------------------------------------
+
+7/51 Testing: FrameExtractionTest.VideoProcessorIntegration
+7/51 Test: FrameExtractionTest.VideoProcessorIntegration
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.VideoProcessorIntegration" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.VideoProcessorIntegration" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.VideoProcessorIntegration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.VideoProcessorIntegration
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using Metal Performance Shaders (MPS) for ONNX Runtime
+CoreML not available, falling back to CPU: CoreMLExecutionProvider execution provider is not supported in this build. 
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 8192 MB
+Initialized CPU compute backend
+Using compute backend: CPU
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 16
+  Memory limit: 8192MB
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+[       OK ] FrameExtractionTest.VideoProcessorIntegration (204 ms)
+[----------] 1 test from FrameExtractionTest (204 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (204 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.88 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.VideoProcessorIntegration" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.VideoProcessorIntegration" time elapsed: 00:00:01
+----------------------------------------------------------
+
+8/51 Testing: FrameExtractionTest.FrameQuality
+8/51 Test: FrameExtractionTest.FrameQuality
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.FrameQuality" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.FrameQuality" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.FrameQuality
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.FrameQuality
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+[       OK ] FrameExtractionTest.FrameQuality (143 ms)
+[----------] 1 test from FrameExtractionTest (143 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (143 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.80 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.FrameQuality" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.FrameQuality" time elapsed: 00:00:01
+----------------------------------------------------------
+
+9/51 Testing: FrameExtractionTest.ConsistentExtraction
+9/51 Test: FrameExtractionTest.ConsistentExtraction
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.ConsistentExtraction" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.ConsistentExtraction" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.ConsistentExtraction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.ConsistentExtraction
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+[       OK ] FrameExtractionTest.ConsistentExtraction (195 ms)
+[----------] 1 test from FrameExtractionTest (195 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (195 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.87 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.ConsistentExtraction" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.ConsistentExtraction" time elapsed: 00:00:01
+----------------------------------------------------------
+
+10/51 Testing: FrameExtractionTest.MemoryEfficiency
+10/51 Test: FrameExtractionTest.MemoryEfficiency
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=FrameExtractionTest.MemoryEfficiency" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"FrameExtractionTest.MemoryEfficiency" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = FrameExtractionTest.MemoryEfficiency
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FrameExtractionTest
+[ RUN      ] FrameExtractionTest.MemoryEfficiency
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Extracting frames from test_video.mp4 (total frames: 50, strategy: uniform)
+[       OK ] FrameExtractionTest.MemoryEfficiency (324 ms)
+[----------] 1 test from FrameExtractionTest (324 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (324 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.94 sec
+----------------------------------------------------------
+Test Passed.
+"FrameExtractionTest.MemoryEfficiency" end time: Jul 14 01:29 EDT
+"FrameExtractionTest.MemoryEfficiency" time elapsed: 00:00:01
+----------------------------------------------------------
+
+11/51 Testing: MemoryManagerTest.SingletonInstance
+11/51 Test: MemoryManagerTest.SingletonInstance
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.SingletonInstance" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.SingletonInstance" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.SingletonInstance
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.SingletonInstance
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.SingletonInstance (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.SingletonInstance" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.SingletonInstance" time elapsed: 00:00:01
+----------------------------------------------------------
+
+12/51 Testing: MemoryManagerTest.BasicAllocationTracking
+12/51 Test: MemoryManagerTest.BasicAllocationTracking
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.BasicAllocationTracking" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.BasicAllocationTracking" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.BasicAllocationTracking
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.BasicAllocationTracking
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.BasicAllocationTracking (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.62 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.BasicAllocationTracking" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.BasicAllocationTracking" time elapsed: 00:00:01
+----------------------------------------------------------
+
+13/51 Testing: MemoryManagerTest.PeakUsageTracking
+13/51 Test: MemoryManagerTest.PeakUsageTracking
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.PeakUsageTracking" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.PeakUsageTracking" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.PeakUsageTracking
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.PeakUsageTracking
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.PeakUsageTracking (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.62 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.PeakUsageTracking" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.PeakUsageTracking" time elapsed: 00:00:01
+----------------------------------------------------------
+
+14/51 Testing: MemoryManagerTest.AllocationStats
+14/51 Test: MemoryManagerTest.AllocationStats
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.AllocationStats" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.AllocationStats" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.AllocationStats
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.AllocationStats
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.AllocationStats (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.62 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.AllocationStats" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.AllocationStats" time elapsed: 00:00:01
+----------------------------------------------------------
+
+15/51 Testing: MemoryManagerTest.MemoryAvailabilityCheck
+15/51 Test: MemoryManagerTest.MemoryAvailabilityCheck
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.MemoryAvailabilityCheck" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.MemoryAvailabilityCheck" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.MemoryAvailabilityCheck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.MemoryAvailabilityCheck
+Memory garbage collection triggered. Current usage: 0 MB
+Memory limit set to 10 MB
+[       OK ] MemoryManagerTest.MemoryAvailabilityCheck (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.74 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.MemoryAvailabilityCheck" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.MemoryAvailabilityCheck" time elapsed: 00:00:01
+----------------------------------------------------------
+
+16/51 Testing: MemoryManagerTest.GarbageCollection
+16/51 Test: MemoryManagerTest.GarbageCollection
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.GarbageCollection" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.GarbageCollection" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.GarbageCollection
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.GarbageCollection
+Memory garbage collection triggered. Current usage: 0 MB
+Memory garbage collection triggered. Current usage: 0 MB
+  gc_test1: 0 MB
+  gc_test2: 0 MB
+Memory garbage collection triggered. Current usage: 0 MB
+  gc_test1: 0 MB
+  gc_test2: 0 MB
+[       OK ] MemoryManagerTest.GarbageCollection (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.GarbageCollection" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.GarbageCollection" time elapsed: 00:00:01
+----------------------------------------------------------
+
+17/51 Testing: MemoryManagerTest.ThreadSafety
+17/51 Test: MemoryManagerTest.ThreadSafety
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.ThreadSafety" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.ThreadSafety" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.ThreadSafety
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.ThreadSafety
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.ThreadSafety (2 ms)
+[----------] 1 test from MemoryManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.ThreadSafety" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.ThreadSafety" time elapsed: 00:00:01
+----------------------------------------------------------
+
+18/51 Testing: MemoryManagerTest.LargeAllocation
+18/51 Test: MemoryManagerTest.LargeAllocation
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.LargeAllocation" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.LargeAllocation" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.LargeAllocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.LargeAllocation
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.LargeAllocation (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.61 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.LargeAllocation" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.LargeAllocation" time elapsed: 00:00:01
+----------------------------------------------------------
+
+19/51 Testing: MemoryManagerTest.ZeroSizeAllocation
+19/51 Test: MemoryManagerTest.ZeroSizeAllocation
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.ZeroSizeAllocation" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.ZeroSizeAllocation" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.ZeroSizeAllocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.ZeroSizeAllocation
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.ZeroSizeAllocation (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.62 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.ZeroSizeAllocation" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.ZeroSizeAllocation" time elapsed: 00:00:01
+----------------------------------------------------------
+
+20/51 Testing: MemoryManagerTest.MemoryLimitBoundaryConditions
+20/51 Test: MemoryManagerTest.MemoryLimitBoundaryConditions
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.MemoryLimitBoundaryConditions" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.MemoryLimitBoundaryConditions" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.MemoryLimitBoundaryConditions
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.MemoryLimitBoundaryConditions
+Memory garbage collection triggered. Current usage: 0 MB
+Memory limit set to 5 MB
+[       OK ] MemoryManagerTest.MemoryLimitBoundaryConditions (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.61 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.MemoryLimitBoundaryConditions" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.MemoryLimitBoundaryConditions" time elapsed: 00:00:01
+----------------------------------------------------------
+
+21/51 Testing: MemoryManagerTest.MultipleTagsPerAllocation
+21/51 Test: MemoryManagerTest.MultipleTagsPerAllocation
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.MultipleTagsPerAllocation" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.MultipleTagsPerAllocation" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.MultipleTagsPerAllocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.MultipleTagsPerAllocation
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.MultipleTagsPerAllocation (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.62 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.MultipleTagsPerAllocation" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.MultipleTagsPerAllocation" time elapsed: 00:00:01
+----------------------------------------------------------
+
+22/51 Testing: MemoryManagerTest.TrackedAllocatorBasicUsage
+22/51 Test: MemoryManagerTest.TrackedAllocatorBasicUsage
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=MemoryManagerTest.TrackedAllocatorBasicUsage" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"MemoryManagerTest.TrackedAllocatorBasicUsage" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = MemoryManagerTest.TrackedAllocatorBasicUsage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemoryManagerTest
+[ RUN      ] MemoryManagerTest.TrackedAllocatorBasicUsage
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] MemoryManagerTest.TrackedAllocatorBasicUsage (0 ms)
+[----------] 1 test from MemoryManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.62 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManagerTest.TrackedAllocatorBasicUsage" end time: Jul 14 01:29 EDT
+"MemoryManagerTest.TrackedAllocatorBasicUsage" time elapsed: 00:00:01
+----------------------------------------------------------
+
+23/51 Testing: VideoProcessingTest.BasicVideoInfo
+23/51 Test: VideoProcessingTest.BasicVideoInfo
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.BasicVideoInfo" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.BasicVideoInfo" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.BasicVideoInfo
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.BasicVideoInfo
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+[       OK ] VideoProcessingTest.BasicVideoInfo (217 ms)
+[----------] 1 test from VideoProcessingTest (217 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (217 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.84 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.BasicVideoInfo" end time: Jul 14 01:29 EDT
+"VideoProcessingTest.BasicVideoInfo" time elapsed: 00:00:01
+----------------------------------------------------------
+
+24/51 Testing: VideoProcessingTest.FrameExtraction
+24/51 Test: VideoProcessingTest.FrameExtraction
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.FrameExtraction" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.FrameExtraction" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.FrameExtraction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.FrameExtraction
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+[       OK ] VideoProcessingTest.FrameExtraction (230 ms)
+[----------] 1 test from VideoProcessingTest (230 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (230 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.86 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.FrameExtraction" end time: Jul 14 01:29 EDT
+"VideoProcessingTest.FrameExtraction" time elapsed: 00:00:01
+----------------------------------------------------------
+
+25/51 Testing: VideoProcessingTest.BasicVideoAnalysis
+25/51 Test: VideoProcessingTest.BasicVideoAnalysis
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.BasicVideoAnalysis" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.BasicVideoAnalysis" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.BasicVideoAnalysis
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.BasicVideoAnalysis
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.43262ms
+[       OK ] VideoProcessingTest.BasicVideoAnalysis (233 ms)
+[----------] 1 test from VideoProcessingTest (233 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (233 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.86 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.BasicVideoAnalysis" end time: Jul 14 01:29 EDT
+"VideoProcessingTest.BasicVideoAnalysis" time elapsed: 00:00:01
+----------------------------------------------------------
+
+26/51 Testing: VideoProcessingTest.CustomPromptAnalysis
+26/51 Test: VideoProcessingTest.CustomPromptAnalysis
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.CustomPromptAnalysis" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.CustomPromptAnalysis" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.CustomPromptAnalysis
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.CustomPromptAnalysis
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 5.1786ms
+[       OK ] VideoProcessingTest.CustomPromptAnalysis (234 ms)
+[----------] 1 test from VideoProcessingTest (234 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (234 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.86 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.CustomPromptAnalysis" end time: Jul 14 01:29 EDT
+"VideoProcessingTest.CustomPromptAnalysis" time elapsed: 00:00:01
+----------------------------------------------------------
+
+27/51 Testing: VideoProcessingTest.DifferentFrameCounts
+27/51 Test: VideoProcessingTest.DifferentFrameCounts
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.DifferentFrameCounts" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.DifferentFrameCounts" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.DifferentFrameCounts
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.DifferentFrameCounts
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 4
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_long.mp4 (total frames: 100, strategy: uniform)
+Extracted 4 frames for analysis
+GPU preprocessing completed in 2.21916ms
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_long.mp4 (total frames: 100, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.82705ms
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 16
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_long.mp4 (total frames: 100, strategy: uniform)
+Extracted 16 frames for analysis
+GPU preprocessing completed in 9.80595ms
+[       OK ] VideoProcessingTest.DifferentFrameCounts (420 ms)
+[----------] 1 test from VideoProcessingTest (420 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (420 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   2.05 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.DifferentFrameCounts" end time: Jul 14 01:29 EDT
+"VideoProcessingTest.DifferentFrameCounts" time elapsed: 00:00:02
+----------------------------------------------------------
+
+28/51 Testing: VideoProcessingTest.DifferentSamplingStrategies
+28/51 Test: VideoProcessingTest.DifferentSamplingStrategies
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.DifferentSamplingStrategies" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.DifferentSamplingStrategies" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.DifferentSamplingStrategies
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.DifferentSamplingStrategies
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_long.mp4 (total frames: 100, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.93388ms
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: keyframe
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_long.mp4 (total frames: 100, strategy: keyframe)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.3211ms
+[       OK ] VideoProcessingTest.DifferentSamplingStrategies (518 ms)
+[----------] 1 test from VideoProcessingTest (519 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (519 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   2.15 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.DifferentSamplingStrategies" end time: Jul 14 01:29 EDT
+"VideoProcessingTest.DifferentSamplingStrategies" time elapsed: 00:00:02
+----------------------------------------------------------
+
+29/51 Testing: VideoProcessingTest.BatchProcessing
+29/51 Test: VideoProcessingTest.BatchProcessing
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.BatchProcessing" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.BatchProcessing" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.BatchProcessing
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.BatchProcessing
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Processing 2 videos in batches of 2
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracting frames from test_video_long.mp4 (total frames: 100, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.73914ms
+Completed: test_video_short.mp4 (confidence: 0.75)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.09667ms
+Completed: test_video_long.mp4 (confidence: 0.75)
+Memory garbage collection triggered. Current usage: 0 MB
+[       OK ] VideoProcessingTest.BatchProcessing (277 ms)
+[----------] 1 test from VideoProcessingTest (277 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (277 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.91 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.BatchProcessing" end time: Jul 14 01:29 EDT
+"VideoProcessingTest.BatchProcessing" time elapsed: 00:00:01
+----------------------------------------------------------
+
+30/51 Testing: VideoProcessingTest.StreamingAnalysis
+30/51 Test: VideoProcessingTest.StreamingAnalysis
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.StreamingAnalysis" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.StreamingAnalysis" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.StreamingAnalysis
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.StreamingAnalysis
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Starting streaming analysis of test_video_long.mp4
+Streaming analysis completed. Processed 100 frames.
+[       OK ] VideoProcessingTest.StreamingAnalysis (351 ms)
+[----------] 1 test from VideoProcessingTest (351 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (351 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.98 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.StreamingAnalysis" end time: Jul 14 01:29 EDT
+"VideoProcessingTest.StreamingAnalysis" time elapsed: 00:00:01
+----------------------------------------------------------
+
+31/51 Testing: VideoProcessingTest.InvalidVideoHandling
+31/51 Test: VideoProcessingTest.InvalidVideoHandling
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.InvalidVideoHandling" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.InvalidVideoHandling" start time: Jul 14 01:29 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.InvalidVideoHandling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.InvalidVideoHandling
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+OpenCV: Couldn't read video stream from file "nonexistent_video.mp4"
+OpenCV: Couldn't read video stream from file "nonexistent_video.mp4"
+OpenCV: Couldn't read video stream from file "nonexistent_video.mp4"
+[       OK ] VideoProcessingTest.InvalidVideoHandling (228 ms)
+[----------] 1 test from VideoProcessingTest (228 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (228 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.86 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.InvalidVideoHandling" end time: Jul 14 01:30 EDT
+"VideoProcessingTest.InvalidVideoHandling" time elapsed: 00:00:01
+----------------------------------------------------------
+
+32/51 Testing: VideoProcessingTest.MemoryLimitRespected
+32/51 Test: VideoProcessingTest.MemoryLimitRespected
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.MemoryLimitRespected" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.MemoryLimitRespected" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.MemoryLimitRespected
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.MemoryLimitRespected
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 100 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 100MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 5.20199ms
+[       OK ] VideoProcessingTest.MemoryLimitRespected (235 ms)
+[----------] 1 test from VideoProcessingTest (235 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (235 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.87 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.MemoryLimitRespected" end time: Jul 14 01:30 EDT
+"VideoProcessingTest.MemoryLimitRespected" time elapsed: 00:00:01
+----------------------------------------------------------
+
+33/51 Testing: VideoProcessingTest.ThreadingConfiguration
+33/51 Test: VideoProcessingTest.ThreadingConfiguration
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.ThreadingConfiguration" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.ThreadingConfiguration" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.ThreadingConfiguration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.ThreadingConfiguration
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 1
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.44727ms
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 1.53207ms
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 4
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 1.9861ms
+[       OK ] VideoProcessingTest.ThreadingConfiguration (263 ms)
+[----------] 1 test from VideoProcessingTest (263 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (263 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.89 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.ThreadingConfiguration" end time: Jul 14 01:30 EDT
+"VideoProcessingTest.ThreadingConfiguration" time elapsed: 00:00:01
+----------------------------------------------------------
+
+34/51 Testing: VideoProcessingTest.GPUvsCSPUComparison
+34/51 Test: VideoProcessingTest.GPUvsCSPUComparison
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.GPUvsCSPUComparison" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.GPUvsCSPUComparison" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.GPUvsCSPUComparison
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.GPUvsCSPUComparison
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.64085ms
+Using Metal Performance Shaders (MPS) for ONNX Runtime
+CoreML not available, falling back to CPU: CoreMLExecutionProvider execution provider is not supported in this build. 
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using compute backend: CPU
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.44785ms
+[       OK ] VideoProcessingTest.GPUvsCSPUComparison (281 ms)
+[----------] 1 test from VideoProcessingTest (281 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (281 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.91 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.GPUvsCSPUComparison" end time: Jul 14 01:30 EDT
+"VideoProcessingTest.GPUvsCSPUComparison" time elapsed: 00:00:01
+----------------------------------------------------------
+
+35/51 Testing: VideoProcessingTest.ResultConsistency
+35/51 Test: VideoProcessingTest.ResultConsistency
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.ResultConsistency" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.ResultConsistency" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.ResultConsistency
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.ResultConsistency
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 3.931ms
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 4.60192ms
+[       OK ] VideoProcessingTest.ResultConsistency (255 ms)
+[----------] 1 test from VideoProcessingTest (255 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (255 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.90 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.ResultConsistency" end time: Jul 14 01:30 EDT
+"VideoProcessingTest.ResultConsistency" time elapsed: 00:00:01
+----------------------------------------------------------
+
+36/51 Testing: VideoProcessingTest.LargeVideoHandling
+36/51 Test: VideoProcessingTest.LargeVideoHandling
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.LargeVideoHandling" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.LargeVideoHandling" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.LargeVideoHandling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.LargeVideoHandling
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_long.mp4 (total frames: 100, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 3.8523ms
+[       OK ] VideoProcessingTest.LargeVideoHandling (273 ms)
+[----------] 1 test from VideoProcessingTest (273 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (273 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.90 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.LargeVideoHandling" end time: Jul 14 01:30 EDT
+"VideoProcessingTest.LargeVideoHandling" time elapsed: 00:00:01
+----------------------------------------------------------
+
+37/51 Testing: VideoProcessingTest.ConfigurationValidation
+37/51 Test: VideoProcessingTest.ConfigurationValidation
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.ConfigurationValidation" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.ConfigurationValidation" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.ConfigurationValidation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.ConfigurationValidation
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 0
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 1000
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 1000 frames for analysis
+GPU preprocessing completed in 484.694ms
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 1000
+  Target size: 32x32
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 1000 frames for analysis
+GPU preprocessing completed in 6.83919ms
+[       OK ] VideoProcessingTest.ConfigurationValidation (3533 ms)
+[----------] 1 test from VideoProcessingTest (3533 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3533 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   5.17 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.ConfigurationValidation" end time: Jul 14 01:30 EDT
+"VideoProcessingTest.ConfigurationValidation" time elapsed: 00:00:05
+----------------------------------------------------------
+
+38/51 Testing: VideoProcessingTest.PerformanceMetrics
+38/51 Test: VideoProcessingTest.PerformanceMetrics
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=VideoProcessingTest.PerformanceMetrics" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"VideoProcessingTest.PerformanceMetrics" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = VideoProcessingTest.PerformanceMetrics
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VideoProcessingTest
+[ RUN      ] VideoProcessingTest.PerformanceMetrics
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+OpenCV: FFMPEG: tag 0x47504a4d/'MJPG' is not supported with codec id 7 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x7634706d/'mp4v'
+Using CPU for ONNX Runtime (GPU disabled)
+No Llama Vision ONNX model found. Checked paths:
+  - models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - models/llama-3.2-vision/onnx/model.onnx
+  - models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llava-1.6-7b/onnx/model.onnx
+  - llama-vision.onnx
+  - llava.onnx
+  - ../models/llama-3.2-11b-vision-instruct/onnx/model.onnx
+  - ../models/llama-3.2-vision/onnx/model.onnx
+  - ../models/llava-1.5-7b-hf/onnx/model.onnx
+  - models/llama-vision/model.onnx
+  - ./llama-vision.onnx
+To use Llama Vision, place your ONNX model in one of these locations.
+Supported models: Llama 3.2 Vision, LLaVA 1.5/1.6
+Using placeholder analysis (no ONNX model loaded)
+ComputeManager initialized with backends: CPU
+Memory limit set to 1024 MB
+Initialized CPU compute backend
+Using CPU compute backend
+VideoProcessor initialized with:
+  Max frames: 8
+  Target size: 256x256
+  Sampling strategy: uniform
+  Threads: 2
+  Memory limit: 1024MB
+Extracting frames from test_video_short.mp4 (total frames: 20, strategy: uniform)
+Extracted 8 frames for analysis
+GPU preprocessing completed in 5.14238ms
+[       OK ] VideoProcessingTest.PerformanceMetrics (235 ms)
+[----------] 1 test from VideoProcessingTest (235 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (235 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.87 sec
+----------------------------------------------------------
+Test Passed.
+"VideoProcessingTest.PerformanceMetrics" end time: Jul 14 01:30 EDT
+"VideoProcessingTest.PerformanceMetrics" time elapsed: 00:00:01
+----------------------------------------------------------
+
+39/51 Testing: ComputeManagerTest.SingletonInstance
+39/51 Test: ComputeManagerTest.SingletonInstance
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.SingletonInstance" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.SingletonInstance" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.SingletonInstance
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.SingletonInstance
+ComputeManager initialized with backends: CPU
+[       OK ] ComputeManagerTest.SingletonInstance (2 ms)
+[----------] 1 test from ComputeManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.62 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.SingletonInstance" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.SingletonInstance" time elapsed: 00:00:01
+----------------------------------------------------------
+
+40/51 Testing: ComputeManagerTest.AvailableBackends
+40/51 Test: ComputeManagerTest.AvailableBackends
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.AvailableBackends" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.AvailableBackends" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.AvailableBackends
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.AvailableBackends
+ComputeManager initialized with backends: CPU
+[       OK ] ComputeManagerTest.AvailableBackends (2 ms)
+[----------] 1 test from ComputeManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.AvailableBackends" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.AvailableBackends" time elapsed: 00:00:01
+----------------------------------------------------------
+
+41/51 Testing: ComputeManagerTest.CreateBestBackend
+41/51 Test: ComputeManagerTest.CreateBestBackend
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.CreateBestBackend" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.CreateBestBackend" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.CreateBestBackend
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.CreateBestBackend
+ComputeManager initialized with backends: CPU
+Initialized CPU compute backend
+[       OK ] ComputeManagerTest.CreateBestBackend (2 ms)
+[----------] 1 test from ComputeManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.CreateBestBackend" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.CreateBestBackend" time elapsed: 00:00:01
+----------------------------------------------------------
+
+42/51 Testing: ComputeManagerTest.CreateSpecificBackend
+42/51 Test: ComputeManagerTest.CreateSpecificBackend
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.CreateSpecificBackend" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.CreateSpecificBackend" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.CreateSpecificBackend
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.CreateSpecificBackend
+ComputeManager initialized with backends: CPU
+Initialized CPU compute backend
+[       OK ] ComputeManagerTest.CreateSpecificBackend (2 ms)
+[----------] 1 test from ComputeManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.CreateSpecificBackend" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.CreateSpecificBackend" time elapsed: 00:00:01
+----------------------------------------------------------
+
+43/51 Testing: ComputeManagerTest.CPUBackendBasicFunctionality
+43/51 Test: ComputeManagerTest.CPUBackendBasicFunctionality
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.CPUBackendBasicFunctionality" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.CPUBackendBasicFunctionality" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.CPUBackendBasicFunctionality
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.CPUBackendBasicFunctionality
+ComputeManager initialized with backends: CPU
+Initialized CPU compute backend
+[       OK ] ComputeManagerTest.CPUBackendBasicFunctionality (2 ms)
+[----------] 1 test from ComputeManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.CPUBackendBasicFunctionality" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.CPUBackendBasicFunctionality" time elapsed: 00:00:01
+----------------------------------------------------------
+
+44/51 Testing: ComputeManagerTest.FrameProcessing
+44/51 Test: ComputeManagerTest.FrameProcessing
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.FrameProcessing" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.FrameProcessing" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.FrameProcessing
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.FrameProcessing
+ComputeManager initialized with backends: CPU
+Initialized CPU compute backend
+[       OK ] ComputeManagerTest.FrameProcessing (6 ms)
+[----------] 1 test from ComputeManagerTest (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (6 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.FrameProcessing" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.FrameProcessing" time elapsed: 00:00:01
+----------------------------------------------------------
+
+45/51 Testing: ComputeManagerTest.BackendAvailabilityCheck
+45/51 Test: ComputeManagerTest.BackendAvailabilityCheck
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.BackendAvailabilityCheck" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.BackendAvailabilityCheck" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.BackendAvailabilityCheck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.BackendAvailabilityCheck
+ComputeManager initialized with backends: CPU
+[       OK ] ComputeManagerTest.BackendAvailabilityCheck (2 ms)
+[----------] 1 test from ComputeManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.75 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.BackendAvailabilityCheck" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.BackendAvailabilityCheck" time elapsed: 00:00:01
+----------------------------------------------------------
+
+46/51 Testing: ComputeManagerTest.EmptyFrameProcessing
+46/51 Test: ComputeManagerTest.EmptyFrameProcessing
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.EmptyFrameProcessing" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.EmptyFrameProcessing" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.EmptyFrameProcessing
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.EmptyFrameProcessing
+ComputeManager initialized with backends: CPU
+Initialized CPU compute backend
+[       OK ] ComputeManagerTest.EmptyFrameProcessing (2 ms)
+[----------] 1 test from ComputeManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.62 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.EmptyFrameProcessing" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.EmptyFrameProcessing" time elapsed: 00:00:01
+----------------------------------------------------------
+
+47/51 Testing: ComputeManagerTest.LargeFrameProcessing
+47/51 Test: ComputeManagerTest.LargeFrameProcessing
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.LargeFrameProcessing" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.LargeFrameProcessing" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.LargeFrameProcessing
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.LargeFrameProcessing
+ComputeManager initialized with backends: CPU
+Initialized CPU compute backend
+[       OK ] ComputeManagerTest.LargeFrameProcessing (50 ms)
+[----------] 1 test from ComputeManagerTest (50 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (50 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.69 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.LargeFrameProcessing" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.LargeFrameProcessing" time elapsed: 00:00:01
+----------------------------------------------------------
+
+48/51 Testing: ComputeManagerTest.MultipleBackendCreation
+48/51 Test: ComputeManagerTest.MultipleBackendCreation
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.MultipleBackendCreation" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.MultipleBackendCreation" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.MultipleBackendCreation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.MultipleBackendCreation
+ComputeManager initialized with backends: CPU
+Initialized CPU compute backend
+Initialized CPU compute backend
+[       OK ] ComputeManagerTest.MultipleBackendCreation (2 ms)
+[----------] 1 test from ComputeManagerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.MultipleBackendCreation" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.MultipleBackendCreation" time elapsed: 00:00:01
+----------------------------------------------------------
+
+49/51 Testing: ComputeManagerTest.ConsistentProcessing
+49/51 Test: ComputeManagerTest.ConsistentProcessing
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=ComputeManagerTest.ConsistentProcessing" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"ComputeManagerTest.ConsistentProcessing" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = ComputeManagerTest.ConsistentProcessing
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ComputeManagerTest
+[ RUN      ] ComputeManagerTest.ConsistentProcessing
+ComputeManager initialized with backends: CPU
+Initialized CPU compute backend
+[       OK ] ComputeManagerTest.ConsistentProcessing (11 ms)
+[----------] 1 test from ComputeManagerTest (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (11 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"ComputeManagerTest.ConsistentProcessing" end time: Jul 14 01:30 EDT
+"ComputeManagerTest.ConsistentProcessing" time elapsed: 00:00:01
+----------------------------------------------------------
+
+50/51 Testing: OllamaIntegrationTest.StubTest
+50/51 Test: OllamaIntegrationTest.StubTest
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=OllamaIntegrationTest.StubTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"OllamaIntegrationTest.StubTest" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = OllamaIntegrationTest.StubTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OllamaIntegrationTest
+[ RUN      ] OllamaIntegrationTest.StubTest
+[       OK ] OllamaIntegrationTest.StubTest (0 ms)
+[----------] 1 test from OllamaIntegrationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"OllamaIntegrationTest.StubTest" end time: Jul 14 01:30 EDT
+"OllamaIntegrationTest.StubTest" time elapsed: 00:00:01
+----------------------------------------------------------
+
+51/51 Testing: PythonBridgeTest.StubTest
+51/51 Test: PythonBridgeTest.StubTest
+Command: "/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/qwen_tests" "--gtest_filter=PythonBridgeTest.StubTest" "--gtest_also_run_disabled_tests"
+Directory: /Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build
+"PythonBridgeTest.StubTest" start time: Jul 14 01:30 EDT
+Output:
+----------------------------------------------------------
+Running main() from /private/tmp/googletest-20250430-4945-4e8m2m/googletest-1.17.0/googletest/src/gtest_main.cc
+Note: Google Test filter = PythonBridgeTest.StubTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PythonBridgeTest
+[ RUN      ] PythonBridgeTest.StubTest
+[       OK ] PythonBridgeTest.StubTest (0 ms)
+[----------] 1 test from PythonBridgeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   1.63 sec
+----------------------------------------------------------
+Test Passed.
+"PythonBridgeTest.StubTest" end time: Jul 14 01:30 EDT
+"PythonBridgeTest.StubTest" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Jul 14 01:30 EDT

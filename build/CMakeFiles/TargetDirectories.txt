@@ -1,0 +1,6 @@
+/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/CMakeFiles/qwen_video_analyzer.dir
+/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/CMakeFiles/qwen_benchmark.dir
+/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/CMakeFiles/qwen_tests.dir
+/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/CMakeFiles/test.dir
+/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/CMakeFiles/edit_cache.dir
+/Users/ahadshirazi/Documents/Github/VCN_qwen_contextualization/build/CMakeFiles/rebuild_cache.dir

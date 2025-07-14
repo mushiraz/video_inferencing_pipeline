@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/qwen_tests.dir/src/compute_manager.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/compute_manager.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/src/frame_extractor.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/frame_extractor.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/src/http_client.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/http_client.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/src/memory_manager.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/memory_manager.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/src/ml_backend.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/ml_backend.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/src/ollama_client.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/ollama_client.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/src/qwen_tokenizer.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/qwen_tokenizer.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/src/simple_tokenizer.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/simple_tokenizer.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/src/video_processor.cpp.o"
+  "CMakeFiles/qwen_tests.dir/src/video_processor.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/tests/test_compute_manager.cpp.o"
+  "CMakeFiles/qwen_tests.dir/tests/test_compute_manager.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/tests/test_frame_extraction.cpp.o"
+  "CMakeFiles/qwen_tests.dir/tests/test_frame_extraction.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/tests/test_memory_management.cpp.o"
+  "CMakeFiles/qwen_tests.dir/tests/test_memory_management.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/tests/test_ollama_integration.cpp.o"
+  "CMakeFiles/qwen_tests.dir/tests/test_ollama_integration.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/tests/test_python_bridge.cpp.o"
+  "CMakeFiles/qwen_tests.dir/tests/test_python_bridge.cpp.o.d"
+  "CMakeFiles/qwen_tests.dir/tests/test_video_processing.cpp.o"
+  "CMakeFiles/qwen_tests.dir/tests/test_video_processing.cpp.o.d"
+  "qwen_tests"
+  "qwen_tests.pdb"
+  "qwen_tests[1]_tests.cmake"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/qwen_tests.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

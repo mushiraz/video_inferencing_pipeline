@@ -1,0 +1,22 @@
+# GPU-Accelerated Video Analysis Requirements
+# For AMD GPUs with rocDecode/rocJPEG support
+
+# Core Python packages
+requests>=2.28.0
+numpy>=1.24.0
+Pillow>=9.0.0
+scipy>=1.10.0
+
+# Optional accelerated image processing
+opencv-python-headless>=4.7.0  # For CPU fallback only
+
+# AMD ROCm platform (install via system package manager)
+# These are loaded dynamically via ctypes:
+# - librocdecode.so (video decoding)
+# - librocjpeg.so (JPEG encoding)
+# - rocm-smi (GPU monitoring)
+
+# Install ROCm via system packages:
+# Ubuntu/Debian: sudo apt install rocm-dev rocm-utils
+# RHEL/CentOS: sudo dnf install rocm-dev rocm-smi
+# Or use official ROCm installation guide 
