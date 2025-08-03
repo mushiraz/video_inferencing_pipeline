@@ -142,10 +142,11 @@ class ProductionVideoAnalyzer:
                 small_frame = cv2.resize(frame, (new_width, new_height), interpolation=cv2.INTER_AREA)
                 
                 timestamp = pos / fps if fps > 0 else pos
+                frame_path = f"/tmp/prod_frame_{i}_{int(timestamp)}.jpg"
                 # Use Windows-compatible temp directory
-                import tempfile
-                temp_dir = tempfile.gettempdir()
-                frame_path = os.path.join(temp_dir, f"prod_frame_{i}_{int(timestamp)}.jpg")
+                #import tempfile
+                #temp_dir = tempfile.gettempdir()
+                #frame_path = os.path.join(temp_dir, f"prod_frame_{i}_{int(timestamp)}.jpg")
                 cv2.imwrite(frame_path, small_frame, [cv2.IMWRITE_JPEG_QUALITY, 70])  # Slightly higher quality
                 
                 frame_data.append((frame_path, timestamp, f"Frame {i+1}"))
