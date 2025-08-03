@@ -23,7 +23,7 @@ class ProductionVideoAnalyzer:
             {"name": "llava:7b", "timeout": 300, "description": "Fast CPU-optimized model"},
         ]
         self.ollama_url = "http://localhost:11434"
-        self.preferred_model = "llava:7b"  # Default to faster model for CPU
+        self.preferred_model = "llama3.2-vision:11b"  # Default to faster model for CPU
         
     def check_system_load(self) -> dict:
         """Check if system can handle vision processing"""
@@ -142,13 +142,65 @@ class ProductionVideoAnalyzer:
                 small_frame = cv2.resize(frame, (new_width, new_height), interpolation=cv2.INTER_AREA)
                 
                 timestamp = pos / fps if fps > 0 else pos
-                frame_path = f"/tmp/prod_frame_{i}_{int(timestamp)}.jpg"
+                # Use Windows-compatible temp directory
+                import tempfile
+                temp_dir = tempfile.gettempdir()
+                frame_path = os.path.join(temp_dir, f"prod_frame_{i}_{int(timestamp)}.jpg")
                 cv2.imwrite(frame_path, small_frame, [cv2.IMWRITE_JPEG_QUALITY, 70])  # Slightly higher quality
                 
                 frame_data.append((frame_path, timestamp, f"Frame {i+1}"))
                 print(f"📸 Extracted {len(frame_data)}: t={timestamp:.1f}s")
         
         cap.release()
+        return frame_data
+    
+    def extract_all_video_frames(self, video_path: str) -> List[tuple]:
+        """Extract ALL frames from the video for comprehensive analysis"""
+        cap = cv2.VideoCapture(video_path)
+        if not cap.isOpened():
+            raise ValueError(f"Could not open video: {video_path}")
+            
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        duration = total_frames / fps if fps > 0 else 0
+        
+        print(f"📹 Video: {total_frames} frames, {fps:.1f} FPS, {duration:.1f}s")
+        print(f"🎯 Extracting ALL {total_frames} frames for comprehensive analysis")
+        
+        frame_data = []
+        frame_count = 0
+        
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                break
+                
+            # Optimize for CPU processing - smaller images
+            height, width = frame.shape[:2]
+            max_size = 384  # Slightly larger than before for better quality
+            scale = max_size / max(height, width)
+            new_width = int(width * scale)
+            new_height = int(height * scale)
+            
+            small_frame = cv2.resize(frame, (new_width, new_height), interpolation=cv2.INTER_AREA)
+            
+            timestamp = frame_count / fps if fps > 0 else frame_count
+            # Use Windows-compatible temp directory
+            import tempfile
+            temp_dir = tempfile.gettempdir()
+            frame_path = os.path.join(temp_dir, f"prod_frame_{frame_count}_{int(timestamp)}.jpg")
+            cv2.imwrite(frame_path, small_frame, [cv2.IMWRITE_JPEG_QUALITY, 70])
+            
+            frame_data.append((frame_path, timestamp, f"Frame {frame_count + 1}"))
+            
+            # Progress indicator every 10 frames
+            if frame_count % 10 == 0:
+                print(f"📸 Extracted {frame_count + 1}/{total_frames} frames ({(frame_count + 1) / total_frames * 100:.1f}%)")
+            
+            frame_count += 1
+        
+        cap.release()
+        print(f"✅ Successfully extracted all {len(frame_data)} frames")
         return frame_data
     
     def analyze_single_frame_robust(self, frame_path: str, timestamp: float, description: str) -> dict:
@@ -370,11 +422,15 @@ Summary (1-2 sentences):"""
         
         return " ".join(summary_parts)
 
-    def analyze_video_production(self, video_path: str, max_frames: int = 10) -> dict:
+    def analyze_video_production(self, video_path: str, max_frames: int = 10, all_frames: bool = False) -> dict:
         """Main video analysis function with overall summary"""
         print("🏭 Production Video Analysis Starting")
         print("=" * 50)
-        print(f"🎯 Processing {max_frames} frames from entire video")
+        
+        if all_frames:
+            print("🎯 Processing ALL frames from entire video")
+        else:
+            print(f"🎯 Processing {max_frames} frames from entire video")
         
         # Check initial system status
         load_check = self.check_system_load()
@@ -385,7 +441,10 @@ Summary (1-2 sentences):"""
         try:
             # Extract frames
             print("📸 Extracting frames from entire video...")
-            frames = self.extract_video_frames_optimized(video_path, max_frames=max_frames)
+            if all_frames:
+                frames = self.extract_all_video_frames(video_path)
+            else:
+                frames = self.extract_video_frames_optimized(video_path, max_frames=max_frames)
             
             if not frames:
                 return {
@@ -444,23 +503,31 @@ def main():
     parser.add_argument("video_path", help="Path to the video file to analyze")
     parser.add_argument("--json", action="store_true", help="Output results in JSON format")
     parser.add_argument("--frames", type=int, default=10, help="Number of frames to extract and analyze (default: 10)")
+    parser.add_argument("--all-frames", action="store_true", help="Process ALL frames in the video (comprehensive analysis)")
     
     args = parser.parse_args()
     
     video_path = args.video_path
     output_json = args.json
     max_frames = args.frames
+    all_frames = args.all_frames
     
     if not output_json:
         print("🏭 Production-Ready Video Analysis Pipeline")
         print(f"📁 Video: {os.path.basename(video_path)}")
-        print(f"🎯 Processing {max_frames} frames distributed across entire video")
-        print(f"⏱️  Estimated processing time: {max_frames * 2:.0f}-{max_frames * 3:.0f} minutes")
+        
+        if all_frames:
+            print("🎯 Processing ALL frames from entire video")
+            print("⏱️  Estimated processing time: Very long (depends on video length)")
+        else:
+            print(f"🎯 Processing {max_frames} frames distributed across entire video")
+            print(f"⏱️  Estimated processing time: {max_frames * 2:.0f}-{max_frames * 3:.0f} minutes")
+        
         print("🎯 Optimized for high CPU load systems")
         print("=" * 60)
     
     analyzer = ProductionVideoAnalyzer()
-    result = analyzer.analyze_video_production(video_path, max_frames)
+    result = analyzer.analyze_video_production(video_path, max_frames, all_frames)
     
     if output_json:
         print(json.dumps(result, indent=2))
